@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Dahlia';
+  src: url('/public/fonts/dahlia-medium.woff2');
+  src: local('Dahlia Medium'), local('Dahlia-Medium'),
+      url('/public/fonts/dahlia-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi-Italic.eot');
+  src: local('Satoshi Italic'), local('Satoshi-Italic'),
+      url('Satoshi-Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi-Black.eot');
+  src: local('Satoshi Black'), local('Satoshi-Black'),
+      url('Satoshi-Black.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi-BlackItalic.eot');
+  src: local('Satoshi Black Italic'), local('Satoshi-BlackItalic'),
+      url('Satoshi-BlackItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi-Regular.eot');
+  src: local('Satoshi Regular'), local('Satoshi-Regular'),
+      url('Satoshi-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi-LightItalic.eot');
+  src: local('Satoshi Light Italic'), local('Satoshi-LightItalic'),
+      url('Satoshi-LightItalic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi-Medium.eot');
+  src: local('Satoshi Medium'), local('Satoshi-Medium'),
+      url('Satoshi-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi-BoldItalic.eot');
+  src: local('Satoshi Bold Italic'), local('Satoshi-BoldItalic'),
+      url('Satoshi-BoldItalic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi-Bold.eot');
+  src: local('Satoshi Bold'), local('Satoshi-Bold'),
+      url('Satoshi-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi-Light.eot');
+  src: local('Satoshi Light'), local('Satoshi-Light'),
+      url('Satoshi-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('Satoshi-MediumItalic.eot');
+  src: local('Satoshi Medium Italic'), local('Satoshi-MediumItalic'),
+      url('Satoshi-MediumItalic.woff2') format('woff2');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@layer components{
+  body::before{
+    display: block;
+    content: '';
+    height: 56px;
+  }
+  button, input, textarea{
+    @apply outline-0
+  }
+  #links .active{
+    @apply text-gray-200
+  }
+  ::-webkit-scrollbar-thumb{
+    @apply bg-slate-900
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 15px;
+    border: 1px solid rgb(75 85 99);
+  }
+  ::-webkit-scrollbar{
+    background-color: transparent;
+    width: 8px;
+  }
+}
+
+.text-fill { -webkit-text-fill-color: #e0e0e0 }
+.text-fill-transparent { -webkit-text-fill-color: transparent }
+.text-fill-black { -webkit-text-fill-color: #000 }
+.text-fill-white { -webkit-text-fill-color: #fff }
+
+.text-stroke { -webkit-text-stroke-color: #e0e0e0 }
+.text-stroke-transparent { -webkit-text-stroke-color: transparent }
+.text-stroke-black { -webkit-text-stroke-color: #000 }
+.text-stroke-white { -webkit-text-stroke-color: #fff }
+
+.text-stroke { -webkit-text-stroke-width: 1px }
+.text-stroke-0 { -webkit-text-stroke-width: 0 }
+.text-stroke-2 { -webkit-text-stroke-width: 2px }
+.text-stroke-4 { -webkit-text-stroke-width: 4px }
+.text-stroke-8 { -webkit-text-stroke-width: 8px }
+
+.paint-fsm { paint-order: fill stroke markers }
+.paint-fms { paint-order: fill markers stroke }
+.paint-sfm { paint-order: stroke fill markers }
+.paint-smf { paint-order: stroke markers fill }
+.paint-mfs { paint-order: markers fill stroke }
+.paint-msf { paint-order: markers stroke fill }
+
+@media (min-width: 640px) {
+  .sm\:text-fill { -webkit-text-fill-color: #e0e0e0 }
+  .sm\:text-fill-transparent { -webkit-text-fill-color: transparent }
+  .sm\:text-fill-black { -webkit-text-fill-color: #000 }
+  .sm\:text-fill-white { -webkit-text-fill-color: #fff }
+
+  .sm\:text-stroke { -webkit-text-stroke-color: #e0e0e0 }
+  .sm\:text-stroke-transparent { -webkit-text-stroke-color: transparent }
+  .sm\:text-stroke-black { -webkit-text-stroke-color: #000 }
+  .sm\:text-stroke-white { -webkit-text-stroke-color: #fff }
+
+  .sm\:text-stroke { -webkit-text-stroke-width: 1px }
+  .sm\:text-stroke-0 { -webkit-text-stroke-width: 0 }
+  .sm\:text-stroke-2 { -webkit-text-stroke-width: 2px }
+  .sm\:text-stroke-4 { -webkit-text-stroke-width: 4px }
+  .sm\:text-stroke-8 { -webkit-text-stroke-width: 8px }
+
+  .sm\:paint-fsm { paint-order: fill stroke markers }
+  .sm\:paint-fms { paint-order: fill markers stroke }
+  .sm\:paint-sfm { paint-order: stroke fill markers }
+  .sm\:paint-smf { paint-order: stroke markers fill }
+  .sm\:paint-mfs { paint-order: markers fill stroke }
+  .sm\:paint-msf { paint-order: markers stroke fill }
+}
