@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="./public/css/styles.css">
   <!-- Swiper js -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <!-- Material icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,200,0,0">
 </head>
 
 <!-- If you want to change the primary color from green to something else. Change it with the tailwind.config.js in the Project Root Folder -->
@@ -22,31 +24,29 @@
 
   <!-- Responsive navbar-->
   <nav
-    class="px-8 md:px-6 lg:px-12 py-2 justify-center fixed top-0 z-20 w-full bg-transparent">
+    class="px-8 md:px-6 lg:px-12 py-2 flex flex-row justify-between fixed top-0 z-20 w-full bg-transparent">
 
+    <a class="brand flex justify-center items-center" href="">
+      <img class="rounded-full" src="/public/img/brandicon.gif" alt="" width="75">
+    </a>
 
-    <div class="flex flex-row justify-between sm:justify-around gap-x-2 text-white py-4">
-
-      <a class="brand flex justify-center items-center" href="">
-        <img class="rounded-full" src="/public/img/brandicon.gif" alt="" width="75">
-      </a>
+    <div class="flex flex-col justify-between sm:justify-around gap-x-2 text-white py-4">
 
       <!-- Hamburger -->
-      <button class="sm:hidden cursor-pointer flex flex-col justify-center gap-y-1" id="hamburger" aria-label="menu">
+      <!-- <button class="sm:hidden cursor-pointer flex flex-col justify-end gap-y-1" id="hamburger" aria-label="menu">
         <div class="w-6 h-1 rounded-lg bg-svg-color bar duration-300"></div>
         <div class="w-4 h-1 rounded-lg bg-svg-color bar duration-300"></div>
         <div class="w-6 h-1 rounded-lg bg-svg-color bar duration-300"></div>
-      </button>
+      </button> -->
 
-      <ul class="hidden sm:flex font-light justify-start gap-x-16 gap-y-5 tracking-wider ml-auto sm:mt-0 bg-bg-color/50 backdrop-blur-sm px-12 py-8 rounded-full text-base" id="links">
-        <li class="table-caption mb-5 sm:mb-0">
+      <ul class="sm:flex font-medium justify-start gap-x-16 gap-y-5 tracking-wider ml-auto sm:mt-0 bg-bg-color/50 backdrop-blur-sm px-12 py-4 md:py-8 lg:py-8 lg:rounded-full md:rounded-full rounded-2xl text-base" id="links">
+        <li class="mb-2 sm:mb-1 flex justify-center items-center">
+          <span class="material-symbols-rounded mr-2">home</span>
           <a href="#!" class="active">Index</a>
         </li>
-        <li class="table-caption mb-5 sm:mb-0">
-          <a href="./public/pages/page1.html" class="text-custom-grey opacity-40 hover:opacity-100 hover:text-white duration-500">Àbout Me</a>
-        </li>
-        <li class="mb-5 sm:mb-0 mx-0">
-          <a href="./public/pages/page2.html" class="text-custom-grey opacity-40 hover:opacity-100 hover:text-white duration-500">Let's Chat</a>
+        <li class="mb-2 sm:mb-1 flex justify-center items-center text-custom-grey opacity-40 hover:opacity-100 hover:text-white duration-500">
+          <span class="material-symbols-rounded mr-2">face_2</span>
+          <a href="./public/pages/page1.html">Àbout Me</a>
         </li>
       </ul>
 
@@ -61,8 +61,8 @@
 
     <!-- Page Content -->
     <section class="text-center py-52">
-      <h1 class="font-Gradual font-bold text-8xl md:text-6xl lg:text-8xl mx-auto pb-32 h-14 bg-gradient-to-r from-yellow-500 to-green-500 bg-clip-text text-fill-transparent">Ekua Eshun</h1>
-      <p class="text-custom-grey font-light text-2xl my-8 mx-auto max-w-5xl tracking-wide">I’m a <span class="font-medium bg-gradient-to-r from-yellow-500 to-green-500 bg-clip-text text-fill-transparent">Creative Designer</span> on the design Team at Interactive Digital, currently living in Accra, Ghana. So glad you made it this far 🥰, just stay a tad longer and you just might find something amazing in my playground.</p>
+      <h1 class="font-Gradual font-bold text-6xl md:text-7xl lg:text-8xl mx-auto pb-12 md:pb-24 lg:pb-32 h-14 bg-gradient-to-r from-yellow-500 to-green-500 bg-clip-text text-fill-transparent">Ekua Eshun</h1>
+      <p class="text-custom-grey font-light text-2xl my-8 mx-12 md:mx-auto lg:mx-auto max-w-5xl tracking-wide">I’m a <span class="font-medium bg-gradient-to-r from-yellow-500 to-green-500 bg-clip-text text-fill-transparent">Creative Designer</span> on the design Team at Interactive Digital, currently living in Accra, Ghana. So glad you made it this far 🥰, just stay a tad longer and you just might find something amazing in my playground.</p>
     </section>
 
 

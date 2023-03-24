@@ -16,6 +16,8 @@ module.exports = {
     },
     screens: {
       'xs': '361px',
+      'mobile': '480px',
+      // => @media (max-width: 480px) { ... }
       ...defaultTheme.screens,
     },
     extend: {
