@@ -18,14 +18,18 @@
 
 <!-- If you want to change the primary color from green to something else. Change it with the tailwind.config.js in the Project Root Folder -->
 
-<body class="bg-bg-color font-Satoshi">
+<body class="bg-black font-Satoshi">
 
   <!-- Responsive navbar-->
   <nav
-    class="px-4 md:px-5 lg:px-16 py-2 justify-center fixed top-0 z-20 w-full bg-transparent">
+    class="px-8 md:px-6 lg:px-12 py-2 justify-center fixed top-0 z-20 w-full bg-transparent">
 
 
     <div class="flex flex-row justify-between sm:justify-around gap-x-2 text-white py-4">
+
+      <a class="brand flex justify-center items-center" href="">
+        <img class="rounded-full" src="/public/img/brandicon.gif" alt="" width="65">
+      </a>
 
       <!-- Hamburger -->
       <button class="sm:hidden cursor-pointer flex flex-col justify-center gap-y-1" id="hamburger" aria-label="menu">
@@ -34,11 +38,7 @@
         <div class="w-6 h-1 rounded-lg bg-svg-color bar duration-300"></div>
       </button>
 
-      <a class="brand" href="">
-        <img src="/public/img/brandlogo.gif" alt="" width="75">
-      </a>
-
-      <ul class="hidden sm:flex font-light justify-start gap-x-16 gap-y-5 tracking-wider ml-auto mt-10 sm:mt-0 bg-bg-color/50 backdrop-blur-sm px-12 py-8 rounded-full text-base" id="links">
+      <ul class="hidden sm:flex font-light justify-start gap-x-16 gap-y-5 tracking-wider ml-auto sm:mt-0 bg-bg-color/50 backdrop-blur-sm px-12 py-8 rounded-full text-base" id="links">
         <li class="table-caption mb-5 sm:mb-0">
           <a href="#!" class="active">Index</a>
         </li>
@@ -61,8 +61,8 @@
 
     <!-- Page Content -->
     <section class="text-center py-52">
-      <h1 class="font-Gradual font-bold text-left text-8xl md:text-6xl lg:text-8xl lg:ml-16 pb-32 h-14 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-fill-transparent">Alice Ekua Eshun</h1>
-      <p class="text-custom-grey font-light text-left text-2xl my-8 lg:ml-16 max-w-4xl tracking-wide">I’m a <span class="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-fill-transparent">Creative Designer</span> on the design Team at Interactive Digital, currently living in Accra, Ghana. So glad you made it this far 🥰, just stay a tad longer and you just might find something amazing in my playground.</p>
+      <h1 class="font-Gradual font-bold text-left text-8xl md:text-6xl lg:text-8xl lg:ml-16 pb-32 h-14 bg-gradient-to-r from-yellow-500 to-green-500 bg-clip-text text-fill-transparent">Alice Ekua Eshun</h1>
+      <p class="text-custom-grey font-light text-left text-2xl my-8 lg:ml-16 max-w-4xl tracking-wide">I’m a <span class="bg-gradient-to-r from-yellow-500 to-green-500 bg-clip-text text-fill-transparent">Creative Designer</span> on the design Team at Interactive Digital, currently living in Accra, Ghana. So glad you made it this far 🥰, just stay a tad longer and you just might find something amazing in my playground.</p>
     </section>
 
 
@@ -72,12 +72,12 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-bg-color pb-3 pt-10 lg:pt-20 text-white">
+    <footer class="bg-black pb-3 pt-10 lg:pt-20 text-white">
 
-      <div class="flex flex-wrap justify-around gap-y-16 gap-x-7 mb-16">
+      <div class="flex flex-wrap justify-start gap-y-16 gap-x-7 px-16 mb-12">
 
         <!-- About -->
-        <div class="text-center text-base mx-2 mb-5">
+        <div class="text-left text-base mx-2 mb-5">
           <!-- Get Icons From Wherever and use it here -->
           <div class="flex flex-wrap gap-x-7 justify-center gap-y-5 mt-5">
             <a href="#!" class="text-custom-grey text-lg hover:text-pink-600 duration-500">
@@ -98,7 +98,7 @@
       <!-- Sub Footer -->
       <div class="w-full h-0.5 border-svg-color opacity-10 border mx-auto"></div>
       <!-- Copyright -->
-      <p class="text-center text-lg tracking-wide mt-8 mb-4 font-normal text-custom-grey opacity-40 hover:opacity-100 hover:text-white">Alice Ekua Eshun - Copyright &copy; <span id="year"></span>. All
+      <p class="text-left text-lg tracking-wide mt-8 mb-4 px-16 font-normal text-custom-grey opacity-40 hover:opacity-100 hover:text-white">Alice Ekua Eshun - Copyright &copy; <span id="year"></span>. All
         Rights
         Reserved</p>
 
@@ -112,12 +112,6 @@
   <script src="./public/js/navbar.js"></script>
   <!-- Core theme JS-->
   <script src="./public/js/scripts.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <script type="module">
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
-
-  const swiper = new Swiper('.swiper')
-</script>
 </body>
 
 </html>
