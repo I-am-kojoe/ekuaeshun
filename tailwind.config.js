@@ -35,7 +35,7 @@ module.exports = {
       },
       fontFamily: {
         'Satoshi': ['Satoshi', 'sans-serif'],
-        'Dahlia': ['Dahlia', 'serif'] // Ensure fonts with spaces have " " surrounding it.
+        'Gradual': ['Gradual', 'serif'] // Ensure fonts with spaces have " " surrounding it.
       }
     },
   },

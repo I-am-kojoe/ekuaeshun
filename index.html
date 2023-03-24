@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="./public/css/output.css">
   <!-- Core theme CSS-->
   <link rel="stylesheet" href="./public/css/styles.css">
+  <!-- Swiper js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 
 <!-- If you want to change the primary color from green to something else. Change it with the tailwind.config.js in the Project Root Folder -->
@@ -20,10 +22,10 @@
 
   <!-- Responsive navbar-->
   <nav
-    class="flex flex-col sm:flex-row flex-wrap md:items-center px-4 md:px-5 lg:px-16 py-2 justify-center fixed top-0 z-20 w-full bg-transparent">
+    class="px-4 md:px-5 lg:px-16 py-2 justify-center fixed top-0 z-20 w-full bg-transparent">
 
 
-    <div class="flex flex-col items-center justify-between sm:justify-around gap-x-2 text-white py-4">
+    <div class="flex flex-row justify-between sm:justify-around gap-x-2 text-white py-4">
 
       <!-- Hamburger -->
       <button class="sm:hidden cursor-pointer flex flex-col justify-center gap-y-1" id="hamburger" aria-label="menu">
@@ -32,18 +34,16 @@
         <div class="w-6 h-1 rounded-lg bg-svg-color bar duration-300"></div>
       </button>
 
-      <ul class="hidden sm:flex font-light justify-end items-center gap-x-32 gap-y-5 tracking-wider mt-10 sm:mt-0 bg-bg-color/50 backdrop-blur-sm px-12 py-8 rounded-full text-lg" id="links">
+      <a class="brand" href="">
+        <img src="/public/img/brandlogo.gif" alt="" width="75">
+      </a>
+
+      <ul class="hidden sm:flex font-light justify-start gap-x-16 gap-y-5 tracking-wider ml-auto mt-10 sm:mt-0 bg-bg-color/50 backdrop-blur-sm px-12 py-8 rounded-full text-base" id="links">
         <li class="table-caption mb-5 sm:mb-0">
           <a href="#!" class="active">Index</a>
         </li>
         <li class="table-caption mb-5 sm:mb-0">
           <a href="./public/pages/page1.html" class="text-custom-grey opacity-40 hover:opacity-100 hover:text-white duration-500">Works</a>
-        </li>
-        <li class="mb-5 sm:mb-0 mx-0">
-          <a href="./public/pages/page2.html" class="text-custom-grey opacity-40 hover:opacity-100 hover:text-white duration-500">About Me</a>
-        </li>
-        <li class="mb-5 sm:mb-0 mx-0">
-          <a href="./public/pages/page2.html" class="text-custom-grey opacity-40 hover:opacity-100 hover:text-white duration-500">Playground</a>
         </li>
         <li class="mb-5 sm:mb-0 mx-0">
           <a href="./public/pages/page2.html" class="text-custom-grey opacity-40 hover:opacity-100 hover:text-white duration-500">Let's Chat</a>
@@ -61,19 +61,15 @@
 
     <!-- Page Content -->
     <section class="text-center py-52">
-      <h1 class="font-Satoshi font-bold text-8xl md:text-6xl lg:text-8xl lg:ml-16 pb-40 h-14 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-fill-transparent">Alice Ekua Eshun</h1>
-      <div class="flex mx-4 justify-center items-center"><p class="text-custom-grey font-light opacity-60 mb-3 text-3xl">Greetings</p><p class="text-3xl mb-3">👋🏽</p></div>
-      <p class="text-custom-grey font-light text-2xl max-w-4xl mx-auto my-8 tracking-wide">I’m a <span class="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-fill-transparent">Creative Designer</span> on the design Team at Interactive Digital, currently living in Accra, Ghana. So glad you made it this far 🥰, just stay a tad longer and you just might find something amazing in my playground.</p>
-      <div class="my-32 relative">
-        <div class="w-3/4 h-0.5 border-svg-color opacity-10 border mx-auto max-w-4xl"></div>
-        <a class="absolute -top-3.5" href="">
-          <img class="animate-spin-slow" src="/public/img/Scroll_Ring.svg" alt="">
-          <img class="absolute top-0" src="/public/img/Scroll_Arrow.svg" alt="">          
-        </a>
-      </div>
+      <h1 class="font-Gradual font-bold text-left text-8xl md:text-6xl lg:text-8xl lg:ml-16 pb-32 h-14 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-fill-transparent">Alice Ekua Eshun</h1>
+      <p class="text-custom-grey font-light text-left text-2xl my-8 lg:ml-16 max-w-4xl tracking-wide">I’m a <span class="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-fill-transparent">Creative Designer</span> on the design Team at Interactive Digital, currently living in Accra, Ghana. So glad you made it this far 🥰, just stay a tad longer and you just might find something amazing in my playground.</p>
     </section>
 
 
+    <!-- Swiper Section -->
+    <section>
+      
+    </section>
 
     <!-- Footer -->
     <footer class="bg-bg-color pb-3 pt-10 lg:pt-20 text-white">
@@ -81,8 +77,7 @@
       <div class="flex flex-wrap justify-around gap-y-16 gap-x-7 mb-16">
 
         <!-- About -->
-        <div class="text-center text-lg mx-2 mb-5">
-          <h2 class="font-Satoshi font-normal text-7xl md:text-5xl lg:text-7xl lg:ml-16 pb-48 h-14 bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-fill-transparent max-w-5xl">Piqued your interest? Let's create some magic together!</h2>
+        <div class="text-center text-base mx-2 mb-5">
           <!-- Get Icons From Wherever and use it here -->
           <div class="flex flex-wrap gap-x-7 justify-center gap-y-5 mt-5">
             <a href="#!" class="text-custom-grey text-lg hover:text-pink-600 duration-500">
@@ -117,6 +112,12 @@
   <script src="./public/js/navbar.js"></script>
   <!-- Core theme JS-->
   <script src="./public/js/scripts.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script type="module">
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+  const swiper = new Swiper('.swiper')
+</script>
 </body>
 
 </html>

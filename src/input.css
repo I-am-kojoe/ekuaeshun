@@ -3,10 +3,20 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Dahlia';
-  src: url('/public/fonts/dahlia-medium.woff2');
-  src: local('Dahlia Medium'), local('Dahlia-Medium'),
-      url('/public/fonts/dahlia-medium.woff2') format('woff2');
+  font-family: 'Gradual';
+  src: url('/public/fonts/Gradual-Regular.woff2');
+  src: local('Gradual Regular'), local('Gradual-Regular'),
+      url('/public/fonts/Gradual-Regular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gradual';
+  src: url('/public/fonts/Gradual-Medium.woff2');
+  src: local('Gradual Medium'), local('Gradual-Medium'),
+      url('/public/fonts/Gradual-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
